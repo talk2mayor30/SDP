@@ -1,0 +1,509 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="SoundBoard.Courses"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait"  Orientation="Portrait"
+    shell:SystemTray.IsVisible="True">
+
+    <ScrollViewer>
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <!--Pivot Control-->
+        <phone:Pivot Title="Skill Development Platform"  x:Name="courses" >
+            <!--Pivot item one-->
+            <phone:PivotItem Header="Big Data">
+                <Grid x:Name="Java" Grid.Row="1"  Margin="12, 0, 12, 12" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="70"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Width="70" Height="70" Stretch="UniformToFill" HorizontalAlignment="Left" >
+                        <Image.Source>
+                            <BitmapImage UriSource="/Assets/images/1.jpg" CreateOptions="BackgroundCreation"/>
+                        </Image.Source>
+                    </Image>
+                  
+                    <TextBlock Grid.Row="1" Margin="10,10,10,0" TextWrapping="Wrap" FontSize="22">
+                        This course covers the following: Week 1 - 2 Introduction to Big Data Big data brief History Big data Overview The four dimensions of Big data - Volume, Velocity, Variety and
+                        Veracity The role of Data Scientists Week 3 - 4 Defining Big Data Introducing the Storage, MapReduce and Query Stack Cloudera Data Models: Graphs, K-Means, K-Mediod and
+                        KNN Clustering , Decision Trees, Time series Analysis Week 5 - 6 Overview of Big Data stores Hadoop Distributed file system (HDFS) Pig and Hive BigTable and MongoDB Week 7 - 8 
+                        Overview of Big Data Processing Big Data processing Architecture Using MapReduce/Hadoop for Analysing Big data Week 9 - 10 Using R to execute Basic Analytic methods 
+                        Introduction to R programming Language Learning the R-Programming language Analysing data using R Week 11 - 12 Project!
+                    </TextBlock>
+                        <Button Grid.Row="2" Content="Register" Height="72" HorizontalAlignment="Center"  Click="Registration_form" VerticalAlignment="Center" Width="180"  />
+                    </Grid>
+            </phone:PivotItem>
+            <phone:PivotItem Header="Linux Programming">
+                <Grid x:Name="linux_programming" Grid.Row="1"  Margin="12, 0, 12, 12" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="70"/>
+                        <RowDefinition Height="*"/>
+                          <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Width="70" Height="70" Stretch="UniformToFill" HorizontalAlignment="Left" >
+                        <Image.Source>
+                            <BitmapImage UriSource="/Assets/images/2.jpg" CreateOptions="BackgroundCreation"/>
+                        </Image.Source>
+                    </Image>
+
+                    <TextBlock Grid.Row="1" Margin="10,10,10,0" TextWrapping="Wrap" FontSize="22">
+                        
+                    </TextBlock>
+                        <Button Grid.Row="2" Content="Register" Height="72" HorizontalAlignment="Center" Click="Registration_form" VerticalAlignment="Center" Width="180"  />
+                    </Grid>
+            </phone:PivotItem>
+            <phone:PivotItem Header="Linux Admistration">
+                <Grid x:Name="linux_administration" Grid.Row="1"  Margin="12, 0, 12, 12" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="70" />
+                        <RowDefinition Height="*" />
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Width="70" Height="70" Stretch="UniformToFill" HorizontalAlignment="Left" >
+                        <Image.Source>
+                            <BitmapImage UriSource="/Assets/images/3.jpg" CreateOptions="BackgroundCreation"/>
+                        </Image.Source>
+                    </Image>
+
+                    <TextBlock Grid.Row="1" Margin="10,10,10,0" TextWrapping="Wrap" FontSize="22">
+                        This Course Contains the following Course Outlines: WEEK 1-2 1. 
+                        Overview of the Linux System Linux history Linux Distributions Linux Architecture Installing Linux (fedora) Console tools, 
+                        system editors WEEK 3-4 2. File System Administration File System Organization File System types, File types, File permissions
+                        Creating a FileSystem, Mounting a Filesystem, unmounting a Filesystem Backup Software, Backup Examples LAB Activity Meeting with Coach 
+                        WEEK 5-6 3. Essential Shell Commands Basic File Manipulation Commands Directory Navigation Commands Advanced File Manipulation Commands Init, 
+                        Processes and Threads LAB Activity WEEK 7-8 4. Users/Groups Admin Root user Defining and Adding Users and Groups Root Priviledge commands Password database, 
+                        group database LAB Activity Meeting with Coach WEEK 9-10 5. Basic Networking IP Networking fundamentals OSI Layers and their Protocols Routing TCP/IP TCPDump 
+                        WEEK 11-12 Project! Meeting with coach
+                    </TextBlock>
+
+                        <Button Grid.Row="2" Content="Register" Height="72" HorizontalAlignment="Center" Click="Registration_form" VerticalAlignment="Center" Width="180"  />
+                    </Grid>
+            </phone:PivotItem>
+            <phone:PivotItem Header="Machine Learning">
+                <Grid x:Name="machine_learning" Grid.Row="1"  Margin="12, 0, 12, 12" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="70"/>
+                        <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Width="70" Height="70" Stretch="UniformToFill" HorizontalAlignment="Left" >
+                        <Image.Source>
+                            <BitmapImage UriSource="/Assets/images/4.jpg" CreateOptions="BackgroundCreation"/>
+                        </Image.Source>
+                    </Image>
+
+                    <TextBlock Grid.Row="1" Margin="10,10,10,0" TextWrapping="Wrap">
+
+
+                    </TextBlock>
+                        <Button Grid.Row="2" Content="Register" Height="72" HorizontalAlignment="Center" Click="Registration_form" VerticalAlignment="Center" Width="180"  />
+                    </Grid>
+            </phone:PivotItem>
+            <phone:PivotItem Header="Image Processing">
+                <Grid x:Name="image_processing" Grid.Row="1"  Margin="12, 0, 12, 12" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="70"/>
+                        <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Width="70" Height="70" Stretch="UniformToFill" HorizontalAlignment="Left" >
+                        <Image.Source>
+                            <BitmapImage UriSource="/Assets/images/5.jpg" CreateOptions="BackgroundCreation"/>
+                        </Image.Source>
+                    </Image>
+
+                    <TextBlock Grid.Row="1" Margin="10,10,10,0" TextWrapping="Wrap">
+
+
+                    </TextBlock>
+                        <Button Grid.Row="2" Content="Register" Height="72" HorizontalAlignment="Center" Click="Registration_form" VerticalAlignment="Center" Width="180"  />
+                    </Grid>
+            </phone:PivotItem>
+            <phone:PivotItem Header="GSM Archictecture">
+                <Grid x:Name="gsm_architecture" Grid.Row="1"  Margin="12, 0, 12, 12" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="70"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Width="70" Height="70" Stretch="UniformToFill" HorizontalAlignment="Left" >
+                        <Image.Source>
+                            <BitmapImage UriSource="/Assets/images/6.jpg" CreateOptions="BackgroundCreation"/>
+                        </Image.Source>
+                    </Image>
+
+                    <TextBlock Grid.Row="1" Margin="10,10,10,0" TextWrapping="Wrap">
+
+
+                    </TextBlock>
+                        <Button Grid.Row="2" Content="Register" Height="72" HorizontalAlignment="Center" Click="Registration_form" VerticalAlignment="Center" Width="180"  />
+                    </Grid>
+            </phone:PivotItem>
+            <phone:PivotItem Header="Java">
+                <Grid x:Name="java" Grid.Row="1"  Margin="12, 0, 12, 12" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="70"/>
+                        <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Width="70" Height="70" Stretch="UniformToFill" HorizontalAlignment="Left" >
+                        <Image.Source>
+                            <BitmapImage UriSource="/Assets/images/7.jpg" CreateOptions="BackgroundCreation"/>
+                        </Image.Source>
+                    </Image>
+
+                    <TextBlock Grid.Row="1" Margin="10,10,10,0" TextWrapping="Wrap" FontSize="22">
+                        This course contains the following course outlines:
+                        WEEK 1-2 INTRODUCTION TO JAVA Brief History of Java Programming Language, Java Environment and Running a Java program Java program Structure Object Orientation in java programming Packages Practice Project
+                        BASICS OF JAVA Primitive Data types, Variables, Literals, constants, Assignments, Initializations, Operators The main() method Control Flow - IF, WHILE and DO statements, Switch, break, continue statements Cast and 
+                        Conversions Arrays and Strings Practice project WEEK 3-4 METHODS Arguments and parameters Passing Objects to Methods Method Overloading, Static Method Recursion and Overloading Practice project CLASSES and OBJECTS IN JAVA The basic OOP principles - 
+                        What are Classes and Objects? Instance and Class Variables, Instance and Class Methods Accessing the class members, Methods returning values and Methods with Parameters Constructors and Overloaded Constructors This, Static, Final, finalize keywords Set, get and predicate 
+                        methods Abstraction, Inheritance, Polymorphism, Encapsulation, Method Overriding, Associations and Delegation Practice Project WEEK 5-6 ABSTRACTION CLASSES and INTERFACES Purpose of Interfaces Abstract Class, Extending Abstract Classes JAVA EXCEPTION HANDLING Exception Handling, 
+                        the Exception hierarchy Checked vs unchecked Exceptions, Handling and Declaring Exceptions, System Exception and Application Exception Catching an Exception: Try and Catch blocks, Advertising Exception with throws Writing Custom Eceptions Practice Project WEEK 7-8 JAVA INPUT and OUTPUT The File Class,
+                        Standard Streams File IO using Byte, Buffered and Character Stream Data Streams: Data Input Stream and Data Output stream Classes Practice Project THREADS Advantages of using threads Threads vs processes Creating threads by extending thread and implementing runnable Threads State and Problems Practice project COLLECTIONS 
+                        Vectors Hashtables Enumerations Lists, Sets, Maps The Collection Class Practice Project WEEK 9-10 NETWORKING Networking Fundamentals The Client/Server Model URLS, Sockets Practice Project WEEK 11-12 PROJECT!
+                    </TextBlock>
+                        <Button Grid.Row="2" Content="Register" Height="72" HorizontalAlignment="Center" Click="Registration_form" VerticalAlignment="Center" Width="180"  />
+                    </Grid>
+            </phone:PivotItem>
+            <phone:PivotItem Header="C#">
+                <Grid x:Name="csharp" Grid.Row="1"  Margin="12, 0, 12, 12" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="70"/>
+                        <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Width="70" Height="70" Stretch="UniformToFill" HorizontalAlignment="Left" >
+                        <Image.Source>
+                            <BitmapImage UriSource="/Assets/images/8.jpg" CreateOptions="BackgroundCreation"/>
+                        </Image.Source>
+                    </Image>
+
+                    <TextBlock Grid.Row="1" Margin="10,10,10,0" TextWrapping="Wrap" FontSize="22">
+                        C♯ is a multi-paradigm programming language encompassing strong typing, imperative, declarative, 
+                        functional, procedural, generic, object-oriented (class-based), and component-oriented programming disciplines. 
+                        C# is one of the programming languages designed for the Common Language Infrastructure. C♯ is intended to be a simple,
+                        modern, general-purpose, object-oriented programming language.
+                    </TextBlock>
+                        <Button Grid.Row="2" Content="Register" Height="72" HorizontalAlignment="Center" Click="Registration_form" VerticalAlignment="Center" Width="180"  />
+                    </Grid>
+            </phone:PivotItem>
+            <phone:PivotItem Header="C++">
+                <Grid x:Name="cplus" Grid.Row="1"  Margin="12, 0, 12, 12" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="70"/>
+                        <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Width="70" Height="70" Stretch="UniformToFill" HorizontalAlignment="Left" >
+                        <Image.Source>
+                            <BitmapImage UriSource="/Assets/images/9.jpg" CreateOptions="BackgroundCreation"/>
+                        </Image.Source>
+                    </Image>
+
+                    <TextBlock Grid.Row="1" Margin="10,10,10,0" TextWrapping="Wrap">
+
+
+                    </TextBlock>
+                        <Button Grid.Row="2" Content="Register" Height="72" HorizontalAlignment="Center" Click="Registration_form" VerticalAlignment="Center" Width="180"  />
+                    </Grid>
+            </phone:PivotItem>
+            <phone:PivotItem Header="Bash">
+                <Grid x:Name="bash" Grid.Row="1"  Margin="12, 0, 12, 12" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="70"/>
+                        <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Width="70" Height="70" Stretch="UniformToFill" HorizontalAlignment="Left" >
+                        <Image.Source>
+                            <BitmapImage UriSource="/Assets/images/10.jpg" CreateOptions="BackgroundCreation"/>
+                        </Image.Source>
+                    </Image>
+
+                    <TextBlock Grid.Row="1" Margin="10,10,10,0" TextWrapping="Wrap" FontSize="22">
+                        This course contains the following outlines which will guide you : 
+                        WEEK 1-2 INTRODUCTION TO BASH SCRIPTING (Review tasks) Bash Brief History, Advantages and Disadvantages Structure of a bash script Bash shell options SHELL SCRIPTS Command types Creating Shell scripts Running Shell Scripts BASH_ENV Practice Project
+                        WEEK 3-4 (Knowledge tasks) VARIABLES Creating and Naming variables Special characters Practice Project FLOW CONTROL Testing Commands IF statement Loops - While loops, break and continue Practice Project Meeting with Coach 
+                        WEEK 5-6 (Knowledge Tasks) ARRAYS Bash Array Syntax Initializing arrays, Appending to an Array Practice Project
+                        WEEK 7-8 (Knowledge tasks) REGULAR EXPRESSIONS Regular Expressions Syntax Filters: grep, sed, awk Practice Project Meeting with Coach 
+                        WEEK 9-10 (Development tasks) HANDS-ON EXERCISES WEEK 11-12 PROJECT!!! Meeting with Coach res for condition-testing and iteration
+
+                    </TextBlock>
+                        <Button Grid.Row="2" Content="Register" Height="72" HorizontalAlignment="Center" Click="Registration_form" VerticalAlignment="Center" Width="180"  />
+                    </Grid>
+            </phone:PivotItem>
+            <phone:PivotItem Header="MySQL">
+                <Grid x:Name="mysql" Grid.Row="1"  Margin="12, 0, 12, 12" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="70"/>
+                        <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Width="70" Height="70" Stretch="UniformToFill" HorizontalAlignment="Left" >
+                        <Image.Source>
+                            <BitmapImage UriSource="/Assets/images/11.jpg" CreateOptions="BackgroundCreation"/>
+                        </Image.Source>
+                    </Image>
+
+                    <TextBlock Grid.Row="1" Margin="10,10,10,0" TextWrapping="Wrap">
+
+
+                    </TextBlock>
+                        <Button Grid.Row="2" Content="Register" Height="72" HorizontalAlignment="Center" Click="Registration_form" VerticalAlignment="Center" Width="180"  />
+                    </Grid>
+            </phone:PivotItem>
+            <phone:PivotItem Header="Artificial Intelligence">
+                <Grid x:Name="artificial_intelligence" Grid.Row="1"  Margin="12, 0, 12, 12" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="70"/>
+                        <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Width="70" Height="70" Stretch="UniformToFill" HorizontalAlignment="Left" >
+                        <Image.Source>
+                            <BitmapImage UriSource="/Assets/images/12.jpg" CreateOptions="BackgroundCreation"/>
+                        </Image.Source>
+                    </Image>
+
+                    <TextBlock Grid.Row="1" Margin="10,10,10,0" TextWrapping="Wrap">
+
+
+                    </TextBlock>
+                        <Button Grid.Row="2" Content="Register" Height="72" HorizontalAlignment="Center" Click="Registration_form" VerticalAlignment="Center" Width="180"  />
+                    </Grid>
+            </phone:PivotItem>
+            <phone:PivotItem Header="javaScript">
+                <Grid x:Name="javascript" Grid.Row="1"  Margin="12, 0, 12, 12" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="70"/>
+                        <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Width="70" Height="70" Stretch="UniformToFill" HorizontalAlignment="Left" >
+                        <Image.Source>
+                            <BitmapImage UriSource="/Assets/images/13.jpg" CreateOptions="BackgroundCreation"/>
+                        </Image.Source>
+                    </Image>
+
+                    <TextBlock Grid.Row="1" Margin="10,10,10,0" TextWrapping="Wrap" FontSize="22">
+                        This Course contains the following Course Outlines: WEEK 1-2 (Review tasks) Introduction Basic JavaScript:values, variables 
+                        WEEK 3-4 (Development tasks) Control flow 'For' Loops in JavaScript 'While' Loops in JavaScript Practice Projects Functions
+                        Function Syntax Calling a Function with Arguments Practice Projects Meeting with Coaches 
+                        WEEK 5-6 (Development tasks) Data structures: Objects and Arrays Functional Programming Methods Events Practice Projects 
+                        WEEK 7-8 (Development tasks) Modularity Regular Expressions Practice Projects Meeting with Coaches 
+                        WEEK 9-10 (Development tasks) The Document-Object Model XMLHttpRequest/Ajax 
+                        Introduction to javascript frameworks Web programming Writing Into HTML Output Reacting to Events DOM Manipulation Changing HTML Content 
+                        Changing HTML Images Changing HTML Styles Practice Projects WEEK 11-12 (Knowledge tasks) PROJECTS!!!
+                    </TextBlock>
+                        <Button Grid.Row="2" Content="Register" Height="72" HorizontalAlignment="Center" Click="Registration_form" VerticalAlignment="Center" Width="180"  />
+                    </Grid>
+            </phone:PivotItem>
+            <phone:PivotItem Header="Perl">
+                <Grid x:Name="perl" Grid.Row="1"  Margin="12, 0, 12, 12" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="70"/>
+                        <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Width="70" Height="70" Stretch="UniformToFill" HorizontalAlignment="Left" >
+                        <Image.Source>
+                            <BitmapImage UriSource="/Assets/images/14.jpg" CreateOptions="BackgroundCreation"/>
+                        </Image.Source>
+                    </Image>
+
+                    <TextBlock Grid.Row="1" Margin="10,10,10,0" TextWrapping="Wrap" FontSize="22">
+                        This Course contains the following Course outlines: WEEK 1-2 INTRODUCTION TO PERL Perl Brief History, Perl Versions, Advantages and
+                        Disadvantages Structure of a perl Script Using the interpreter interactively, Running a Perl script Practice Project PERL OPERATIONS Arithmetic Operators, String Operators and
+                        Assignment Operators Relational Operators and Logical Operators String Functions Practice Project WEEK 3-4 PERL VARIABLES, ARRAYS and HASHES Data types, Variable Names and Syntax Lists, Scalar and
+                        List contexts Array Concepts, Array Functions Use of push, pop, shift, sort, reverse, chop, split, join, grep, spice key words Command Line Arguments Hashes, hashes functions Practice Project CONTROL STRUCTURES IF Statements FOR, FOREACH and
+                        WHILE Loops Meeting with coach WEEK 5-6 SUBROUTINES Calling Subroutines Passing Arguments to Subroutines Returning Values from Subroutines Predefined Subroutines Practice Projects WEEK 7-8 INPUT OPERATIONS and
+                        FILE IO String literals The print, printf, sprint functions FileHandles Reading directories MODULES and PACKAGES Using and getting Modules Using Packages Creating Modules Meeting with Coach WEEK 9-10 PATTERN MATCHING and REGULAR EXPRESSIONS Regular Expression Syntax, Metacharacters Single Character Matching Multiple Character Matching The Substitution and
+                        Translation operator Practice Project PERL and CGI Introduction to CGI Using cgi.pm Module CGI Environment variables Practice Project Introduction to DBI Brief MySQL structure Meeting with Coach WEEK 11-12 PROJECT!
+
+                    </TextBlock>
+                        <Button Grid.Row="2" Content="Register" Height="72" HorizontalAlignment="Center" Click="Registration_form" VerticalAlignment="Center" Width="180"  />
+                    </Grid>
+            </phone:PivotItem>
+            <phone:PivotItem Header="PHP">
+                <Grid x:Name="php" Grid.Row="1"  Margin="12, 0, 12, 12" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="70"/>
+                        <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Width="70" Height="70" Stretch="UniformToFill" HorizontalAlignment="Left" >
+                        <Image.Source>
+                            <BitmapImage UriSource="/Assets/images/15.jpg" CreateOptions="BackgroundCreation"/>
+                        </Image.Source>
+                    </Image>
+
+                    <TextBlock Grid.Row="1" Margin="10,10,10,0" TextWrapping="Wrap" FontSize="22">
+                        This Course contains the following Course outline: 
+                        WEEK 1-2 (Knowledge tasks) INTRODUCTION TO PHP PHP brief History, Versions, Advantages and Disadvantages Structure of A PHP program PHP CLI PHP BASICS How PHP Works, the php.ini file Basic PHP Syntax - 
+                        PHP tags, statements, comments, PHP Functions Variables Types, Variable Names, PHP Operators Creating Dynamic pages Practice Project 
+                        WEEK 3-4 (Knowledge tasks) FLOW CONTROL Conditional processing - IF statements Loops - While Loops, do-while, break and continue Practice Project 
+                        ARRAYS Enumerated Arrays, Initializing Arrays, appending to an array, looping through arrays Array manipulation functions Practice Project
+                        WEEK 5-6 (Knowledge tasks) PHP and HTML FORMS HTML Forms - How HTML Forms works, Form variables String manipulation in PHP File system access and handling file uploads WEEK 7-8 (Knowledge tasks)
+                        MySQL DATABASES Database Basics MySQL Command Line Interpreter Creating a database, Modifying a database MySQL Commands Administering a database practice project WEEK 9-10 (Knowledge tasks) 
+                        XML IN PHP Introduction to XML Creating XML file PHP and XML introduction to PHP frameworks AJAX IN PHP Introduction to Ajax and it’s use AJAX and PHP Practice project WEEK 11-12 PROJECT!
+                    </TextBlock>
+                        <Button Grid.Row="2" Content="Register" Height="72" HorizontalAlignment="Center" Click="Registration_form" VerticalAlignment="Center" Width="180"  />
+                    </Grid>
+            </phone:PivotItem>
+            <phone:PivotItem Header="Python">
+                <Grid x:Name="python" Grid.Row="1"  Margin="12, 0, 12, 12" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="70"/>
+                        <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Width="70" Height="70" Stretch="UniformToFill" HorizontalAlignment="Left" >
+                        <Image.Source>
+                            <BitmapImage UriSource="/Assets/images/16.jpg" CreateOptions="BackgroundCreation"/>
+                        </Image.Source>
+                    </Image>
+
+                    <TextBlock Grid.Row="1" Margin="10,10,10,0" TextWrapping="Wrap" FontSize="22">
+                        This Course contains the following Course Outlines: WEEK 1-2 INTRODUCTION TO PYTHON Python Brief History, Python Versions, Advantages annd
+                        Disadvantages Installing Python Structure of a Python Program Using the interpreter Interactively Practice Project BASIC PYTHON SYNTAX Basic Syntax, comments String Operators and
+                        Expressions Numeric Operators and Expressions Simple Input and Output, the “Print” function Practice Project WEEK 3-4 FLOW CONTROL Control Flow and Syntax, Indenting Relational and
+                        Logical Operators The IF and ELSEIF Statement The WHILE loop “Break” and “Continue” The FOR LOOP Practice Project SEQUENCE DATA List Operations and Methods Tuples Sets Dictionaries, 
+                        Sorting Dictionaries,Copying collections Practice Project Meeting with Coach WEEK 5-6 FUNCTIONS Syntax of function definition Function Parameters Global and Local Variables Passing Parameters and
+                        Returning Values Defining your own Function Practice Project MODULES What a Module is Standard Modules The Import Statement, Function aliases Packages WEEK 7-8 EXCEPTIONS Errors, Runtime Errors The Exception Model, The Exception Heirarchy Handling Multiple Exceptions Writing your own Exception Classes Practice Project INPUT and
+                        OUTPUT Data Streams, Acess modes Writing data to a File, Reading Data from a file Additional File Methods Using pipes as data stream Handling IO exceptions Working with directories Metadata Practice Project Meeting with Coach WEEK 9-10 CLASSES IN PYTHON Creating and Defining classes principles of Object Orientation Instance 
+                        Methods, Special Methods, Inheritance, Polymorphism Practice Project REGULAR EXPRESSIONS Simple character matches Special characters, character classes Quantifiers, Grouping Greedy Matches, Match Object Practice Project Meeting with Coach WEEK 11-12 pip install -r virtual env Vagrant Builds PROJECT! Meeting with Coach
+                    </TextBlock>
+                        <Button Grid.Row="2" Content="Register" Height="72" HorizontalAlignment="Center" Click="Registration_form" VerticalAlignment="Center" Width="180"  />
+                    </Grid>
+            </phone:PivotItem>
+            <phone:PivotItem Header="Web Archictecture">
+                <Grid x:Name="web_archictecture" Grid.Row="1"  Margin="12, 0, 12, 12" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="70"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Width="70" Height="70" Stretch="UniformToFill" HorizontalAlignment="Left" >
+                        <Image.Source>
+                            <BitmapImage UriSource="/Assets/images/17.jpg" CreateOptions="BackgroundCreation"/>
+                        </Image.Source>
+                    </Image>
+
+                    <TextBlock Grid.Row="1" Margin="10,10,10,0" TextWrapping="Wrap">
+
+
+                    </TextBlock>
+                        <Button Grid.Row="2" Content="Register" Height="72" HorizontalAlignment="Center" Click="Registration_form" VerticalAlignment="Center" Width="180"  />
+                    </Grid>
+            </phone:PivotItem>
+            <phone:PivotItem Header="Cloud Computing">
+                <Grid x:Name="cloud_computing" Grid.Row="1"  Margin="12, 0, 12, 12" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="70"/>
+                        <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Width="70" Height="70" Stretch="UniformToFill" HorizontalAlignment="Left" >
+                        <Image.Source>
+                            <BitmapImage UriSource="/Assets/images/18.jpg" CreateOptions="BackgroundCreation"/>
+                        </Image.Source>
+                    </Image>
+
+                    <TextBlock Grid.Row="1" Margin="10,10,10,0" TextWrapping="Wrap">
+
+
+                    </TextBlock>
+                        <Button Grid.Row="2" Content="Register" Height="72" HorizontalAlignment="Center" Click="Registration_form" VerticalAlignment="Center" Width="180"  />
+                    </Grid>
+            </phone:PivotItem>
+            <phone:PivotItem Header="Database Admistration">
+                <Grid x:Name="database_admin" Grid.Row="1"  Margin="12, 0, 12, 12" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="70"/>
+                        <RowDefinition Height="*"/>
+                         <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Width="70" Height="70" Stretch="UniformToFill" HorizontalAlignment="Left" >
+                        <Image.Source>
+                            <BitmapImage UriSource="/Assets/images/19.jpg" CreateOptions="BackgroundCreation"/>
+                        </Image.Source>
+                    </Image>
+
+                    <TextBlock Grid.Row="1" Margin="10,10,10,0" TextWrapping="Wrap">
+
+
+                    </TextBlock>
+                        <Button Grid.Row="2" Content="Register" Height="72" HorizontalAlignment="Center" Click="Registration_form" VerticalAlignment="Center" Width="180"  />
+                    </Grid>
+            </phone:PivotItem>
+            
+        </phone:Pivot>
+    </Grid>
+    </ScrollViewer>
+</phone:PhoneApplicationPage>

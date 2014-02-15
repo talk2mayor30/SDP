@@ -1,0 +1,101 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="SoundBoard.Mentor"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait"  Orientation="Portrait"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <ScrollViewer>
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <phone:Pivot Title="Skill Development Platform" x:Name="mentor" >
+            <!--Pivot item one-->
+            <phone:PivotItem Header="SDP?" Margin="14,20,10,-12" >
+                <Grid x:Name="Detan" Grid.Row="1"  Margin="12, 0, 12, 12" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="40"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Row="0" FontSize="25">
+                        What is SDP?
+                    </TextBlock>
+                    <TextBlock Grid.Row="1" Margin="10,10,10,0" TextWrapping="Wrap" FontSize="25">
+                        Skill Development Platform that employs a coaching based Training / 
+                        Learning style to help and guide you in learning a world class 
+                        relevant technology skill in just 3 months. SDP is a community of knowledge-driven 
+                        professionals in the IT industry who are willing and able to learn skills relevant
+                        to our society and their personal career goals and aspirations, thereby helping to
+                        solve challenges and problems using these skills and tools learnt.
+                    </TextBlock>
+                </Grid>
+            </phone:PivotItem>
+
+            <phone:PivotItem Header="Offers"  >
+                <Grid x:Name="emeka" Grid.Row="1"  Margin="12, 0, 12, 12" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="40"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock FontSize="25">
+                        What do we offer?
+                    </TextBlock>
+                    <TextBlock Grid.Row="1" Margin="10,10,10,0" FontSize="25" TextWrapping="Wrap">
+                        --Convenient Virtual classes! Anytime! Anywhere!
+                        --Skill learned provide you with ample opportunity to stand-out among your equals
+                        --SDP may provide you with the chance of working on real company projects after the 3-months duration of learning for each skill
+                        --Cheap and Affordable Social Learning --Build you Skill portfolio and get references
+                    </TextBlock>
+                </Grid>
+            </phone:PivotItem>
+            <phone:PivotItem Header="Requirements" >
+                <Grid x:Name="mayowa" Grid.Row="1"  Margin="12, 0, 12, 12" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="40"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock FontSize="25">
+                        What do i need to join SDP?
+                    </TextBlock>
+                    <TextBlock Grid.Row="1" Margin="10,10,10,0" TextWrapping="Wrap" FontSize="25">
+                        --A PC with internet connection --A teachable individual
+                    </TextBlock>
+                </Grid>
+            </phone:PivotItem>
+            <phone:PivotItem Header="Duration" >
+                <Grid x:Name="francis" Grid.Row="1"  Margin="12, 0, 12, 12" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="40"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock FontSize="25">
+                       How Long does it run?
+                    </TextBlock>
+                    <TextBlock Grid.Row="1" Margin="10,10,10,0" FontSize="25" TextWrapping="Wrap">
+                        SDP runs for a period of 3 months per skill chosen at a rate of #5000 per skill and you are allowed to enrol for as many courses as you wish per time.
+                    </TextBlock>
+                </Grid>
+            </phone:PivotItem>            
+        </phone:Pivot>
+    </Grid>
+    </ScrollViewer>
+</phone:PhoneApplicationPage>
